@@ -50,4 +50,4 @@ jobs:
           app-name: 'azure-deployment-test'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_41EC65C873C04192BF48CC58B7BEED6A }}
-          package: 'target/*.jar'
+          package: '*.jar'
