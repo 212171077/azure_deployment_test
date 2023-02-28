@@ -51,6 +51,3 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_935E833503ED489CAC6669DD95AF3544 }}
           package: '*.jar'
-
-      - name: Start Spring Boot App
-        run: java -jar ./*.jar com.example.azure_deployment_test.AzureDeploymentTestApplication
