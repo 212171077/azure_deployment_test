@@ -22,7 +22,7 @@ jobs:
           java-version: '17'
 
       - name: Build with Maven
-        run: mvn clean install -DskipTests
+        run: mvn -o clean install -DskipTests
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -53,4 +53,4 @@ jobs:
           package: '*.jar'
 
       - name: Start Spring Boot App
-        run: java -jar ./target/*.jar com.example.azure_deployment_test.AzureDeploymentTestApplication
+        run: java -jar ./*.jar com.example.azure_deployment_test.AzureDeploymentTestApplication
